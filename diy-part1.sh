@@ -13,5 +13,6 @@
 # UA3F：UA 改写插件（LuCI 页面位于 服务 → UA3F）
 git clone --depth 1 https://github.com/SunBK201/UA3F.git package/UA3F
 
-# HomeProxy：sing-box 透明代理面板（sing-box 本体来自官方 packages feed，自动带出）
-git clone --depth 1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
+# Argon 主题 + 主题配置器（master 分支对应 24.10）
+git clone -b master --depth 1 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
