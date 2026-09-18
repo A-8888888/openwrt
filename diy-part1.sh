@@ -10,9 +10,8 @@
 # See /LICENSE for more information.
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# UA3F：UA 改写插件（LuCI 页面位于 服务 → UA3F）
+git clone --depth 1 https://github.com/SunBK201/UA3F.git package/UA3F
 
-# Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# HomeProxy：sing-box 透明代理面板（sing-box 本体来自官方 packages feed，自动带出）
+git clone --depth 1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
